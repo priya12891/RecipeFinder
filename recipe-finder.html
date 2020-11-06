@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <?php
+  include "recipe-finder.php";
+  ?>
+<title>Recipe Finder</title>
+</head>
+<body>
+
+<h1>Find Recipes</h1>
+<form action="recipe-finder.php" method="post" enctype="multipart/form-data">
+  
+  <div style="margin: 2px;">
+  	Select csv files to upload : 
+  	<input type="file" name="csvFileToUpload" id="csvFileToUpload">	
+  </div>
+  
+  <div style="margin: 2px;">
+  	Select json files to upload : 
+  	<input type="file" name="jsonFileToUpload" id="jsonFileToUpload">	
+  </div>
+  <div style="margin: 2px;">
+  	<input type="submit" value="Check Recipe" name="submit">	
+  </div>
+
+</form>
+</body>
+</html>
